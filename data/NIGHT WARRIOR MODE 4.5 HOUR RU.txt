@@ -1,0 +1,152 @@
+# 🔥 NIGHT WARRIOR MODE: 4.5 HOUR RUST BLITZ
+**3:36 AM - 8:00 AM | PROVE YOURSELF**
+
+## HOUR 1 (3:36-4:36): RUST FUNDAMENTALS SPEEDRUN
+**Setup + Core Concepts Blast**
+
+### Setup (10 mins)
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source ~/.cargo/env
+cargo --version
+```
+
+### Core Concepts (50 mins)
+**Ownership & Borrowing (15 mins)**
+- Write 3 small programs showing move, borrow, mutable borrow
+- Break the compiler intentionally, then fix it
+
+**Pattern Matching (15 mins)**
+```rust
+// Master this syntax in 15 mins
+match value {
+    Some(x) if x > 0 => println!("Positive: {}", x),
+    Some(x) => println!("Non-positive: {}", x),
+    None => println!("Nothing"),
+}
+```
+
+**Error Handling (20 mins)**
+- `Result<T, E>` and `Option<T>`
+- `?` operator mastery
+- Custom error types
+
+---
+
+## HOUR 2 (4:36-5:36): FIRST BLOOD PROJECT
+**CLI Password Generator + File Manager**
+
+### Features to Build:
+1. Generate cryptographically secure passwords
+2. Save/load passwords from encrypted file
+3. Search and filter saved entries
+4. Command-line interface with clap
+
+### Key Rust Concepts You'll Master:
+- `std::fs` file operations
+- `rand` crate for crypto
+- `clap` for CLI parsing
+- `serde` for serialization
+- Error propagation with `?`
+
+### Code Structure:
+```
+password_manager/
+├── src/
+│   ├── main.rs
+│   ├── crypto.rs
+│   ├── storage.rs
+│   └── cli.rs
+├── Cargo.toml
+└── passwords.json
+```
+
+---
+
+## HOUR 3 (5:36-6:36): LEVEL UP PROJECT
+**Multi-threaded File Processor**
+
+### The Challenge:
+Process 1000+ text files concurrently:
+- Count words, lines, characters
+- Find specific patterns
+- Generate statistics report
+- Handle errors gracefully
+
+### Rust Skills Unlocked:
+- `std::thread` and thread pools
+- `Arc<Mutex<T>>` for shared state
+- `mpsc` channels for communication
+- `rayon` for data parallelism
+- `regex` for pattern matching
+
+### Performance Goal:
+Process 1GB+ of text files in under 30 seconds
+
+---
+
+## HOUR 4 (6:36-7:36): DSA IN RUST BLITZ
+**Implement Core Data Structures**
+
+### 30-Minute Sprint Each:
+
+**Custom HashMap (30 mins)**
+```rust
+struct MyHashMap<K, V> {
+    buckets: Vec<Vec<(K, V)>>,
+    size: usize,
+}
+```
+
+**Binary Search Tree (30 mins)**
+```rust
+struct BST<T> {
+    value: T,
+    left: Option<Box<BST<T>>>,
+    right: Option<Box<BST<T>>>,
+}
+```
+
+### Bonus Challenge:
+Implement Iterator trait for both structures
+
+---
+
+## HOUR 4.5 (7:36-8:00): FLEX DOCUMENTATION
+**Make It Portfolio-Ready**
+
+### Final 24 Minutes:
+1. **README files** for all projects (8 mins)
+2. **Code comments** and documentation (8 mins)
+3. **Git commits** with proper messages (4 mins)
+4. **Screenshot/demo** your work (4 mins)
+
+---
+
+## SUCCESS METRICS BY 8 AM:
+- [ ] 3 working Rust projects
+- [ ] 2 custom data structures implemented
+- [ ] 50+ lines of error-handling code
+- [ ] Multi-threading working
+- [ ] File I/O mastery
+- [ ] Git repo with clean commits
+
+## RESOURCES FOR SPEED:
+- **Rust Book**: https://doc.rust-lang.org/book/
+- **Rust by Example**: https://doc.rust-lang.org/rust-by-example/
+- **Cargo docs**: https://doc.rust-lang.org/cargo/
+- **Crates.io**: Search for: clap, serde, rand, rayon, regex
+
+## THE MINDSET:
+"Every error message is a teacher. Every compilation failure makes me stronger. I don't sleep until I can think in Rust."
+
+## BREAK RULES:
+- 5 minutes max every hour
+- Hydrate, don't caffeinate to crash
+- If stuck >10 minutes, move on and circle back
+
+---
+
+**REMEMBER: You're not just learning Rust. You're proving that you can do the impossible. Show yourself what 4.5 hours of pure focus can achieve.**
+
+**LET'S. FUCKING. GO.** 🚀
