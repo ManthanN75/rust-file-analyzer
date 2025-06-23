@@ -1,0 +1,9 @@
+Big Data Architecture & Characteristics
+Drivers of Big Data (Why Big Data is important for businesses)
+HDFS Design & Concepts (Block size, Replication, Read/Write Mechanism)
+MapReduce Framework (How it works, Phases: Map, Shuffle, Sort, Reduce)
+NoSQL Databases (MongoDB CRUD operations, Indexing, ACID properties)
+Pig vs. Hive vs. HBase (Differences, Use Cases)
+Sqoop & Flume (Data ingestion tools)
+Big Data Security Challenges (Hadoop security issues)
+Privacy, Compliance & Auditing (GDPR, Data Protection)

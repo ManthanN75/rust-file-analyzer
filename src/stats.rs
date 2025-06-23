@@ -14,15 +14,15 @@ pub fn analyze_file(path: &str) -> io::Result<FileStats> {
     let mut chars = 0;
 
     for line in reader.lines() {
-    let line = line?;
-    lines += 1;
-    words += line.split_whitespace().count();
-    chars += line.chars().count();
-    } 
-    
-    Ok(FileStats { lines, words, chars })
+        let line = line?;
+        lines += 1;
+        words += line.split_whitespace().count();
+        chars += line.chars().count();
+    }
 
-
-
-
+    Ok(FileStats {
+        lines,
+        words,
+        chars,
+    })
 }
